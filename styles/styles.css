@@ -1,0 +1,34 @@
+body {
+  width: 1440px;
+  margin: auto;
+  background-color: gray;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header_title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: white;
+}
+
+.nav_links {
+  font-family: "Open Sans", "Arial", sans-serif;
+  list-style: none;
+  position: absolute;
+  top: 31px;
+  right: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_link {
+  color: aliceblue;
+  text-decoration: none;
+}
