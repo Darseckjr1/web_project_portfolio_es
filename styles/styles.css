@@ -1,7 +1,10 @@
 html {
-  width: 1440px;
-  height: 1998px;
   background: #111111;
+}
+
+.body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
@@ -10,33 +13,37 @@ html {
 }
 
 .cv {
-  height: 0;
+  display: grid;
+  grid-template-columns: auto auto 120px;
+  grid-template-rows: 89px auto;
+  grid-template-areas:
+    "title image"
+    "cv_subtitle image"
+    "cv_description image"
+    "nav image";
 }
 
 .cv_title {
-  position: absolute;
   width: 793px;
   height: 156px;
-  left: 120px;
-  top: 89px;
   font-family: "Archivo Black", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 78px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
   margin: 0;
+  grid-area: title;
+  transform: translate(120px, 89px);
+}
+
+.cv_title_span {
+  display: block;
 }
 
 .cv_subtitle {
-  display: flex;
-  position: relative;
   width: 790px;
   height: 25px;
-  left: 120px;
-  top: 260px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -44,14 +51,13 @@ html {
   line-height: 25px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
+  grid-area: cv_subtitle;
+  transform: translate(120px, 161px);
 }
 
 .cv_description {
-  position: absolute;
   width: 793px;
   height: 150px;
-  left: 120px;
-  top: 315px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -59,15 +65,15 @@ html {
   line-height: 25px;
   color: #ffffff;
   margin: 0;
+  grid-area: cv_description;
+  transform: translate(120px, 109px);
 }
 
 .nav_section_cv {
   width: 401px;
   height: 25px;
-  position: relative;
-  top: 465px;
-  left: 120px;
-  margin-bottom: 5px;
+  grid-area: nav;
+  transform: translate(120px, 66px);
 }
 
 .nav_links_cv {
@@ -112,9 +118,6 @@ html {
   color: #ffffff;
   text-decoration: none;
   opacity: 0.5;
-  width: 88px;
-  height: 25px;
-  display: flex;
 }
 
 .nav_link_cv1:hover,
@@ -127,9 +130,6 @@ html {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  position: relative;
-  top: 465px;
-  left: 120px;
   width: fit-content;
 }
 
@@ -160,9 +160,9 @@ html {
 .cv_image {
   width: 387px;
   height: 500px;
-  position: absolute;
-  top: 40px;
-  left: 933px;
+  grid-area: image;
+  transform: translateY(40px);
+  justify-self: end;
 }
 
 .skills_tools {
@@ -271,7 +271,7 @@ html {
   flex-direction: row;
   gap: 20px;
   margin: 0;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .proyect2_image {
@@ -336,7 +336,7 @@ html {
   flex-direction: row;
   gap: 20px;
   margin: 0;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .footer_box {
@@ -396,4 +396,25 @@ html {
 
 .footer_description:hover {
   opacity: 1;
+}
+
+.nav_logo:hover {
+  opacity: 0.5;
+}
+
+.nav_link_proyect1:hover,
+.nav_link_proyect2:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1023px) {
+  .cv_title {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cv_title {
+    font-size: 10px;
+  }
 }
