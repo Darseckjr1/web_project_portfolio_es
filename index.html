@@ -1,55 +1,79 @@
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
-        <h1 class="header_title">PORTAFOLIO DE EDGAR</h1>
+      <section class="cv_section">
+    <div class="cv">
+      <h1 class="cv_title">Edgar <span class="cv_title_span">Rodriguez</span> </h1>
+      <p class="cv_subtitle">Desarrolladora Full-Stack Junior | TypeScript, React, Node.js</p>
+      <p class="cv_description">Desarrollador web junior con experiencia práctica creando interfaces limpias y responsivas con HTML, CSS, así como implementando lógica básica de back-end. Ha trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro y resolver problemas de forma estructurada. Motivado por seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer como desarrollador.</p>
+    </div>
+    <div class="nav_section_cv">
       <nav class="nav">
-        <ul class="nav_links">
-            <li><a class="nav_link" href="#proyects">Proyectos</a></li>
-            <li><a class="nav_link" href="#contact">Contacto</a></li>
+        <ul class="nav_links_cv">
+          <li><a class="nav_link_cv1" href="#cv">Descargar CV</a></li>
+          <li><a class="nav_link_cv2" href="#github">Enlace a Github</a></li>
+          <li><a class="nav_link_cv3" href="#contacts">Contacto</a></li>
+          <div class="rectangle1"></div>
+          <div class="rectangle2"></div>
+          <div class="rectangle3"></div>
+          <img class="cv_image" src="./images/retrato.svg">
         </ul>
       </nav>
-    </header>
-
-    <main class="content">
-    <div class="cv">
-      <h2 class="cv_title">Edgar Rodriguez</h2>
-      <p class="cv_description">Desarrollador full stack</p>
     </div>
-    <section class="proyects" id="#proyects">
-      <p class="title">Proyectos</p>
-      <div class="proyect_1">
-        <p class="proyect_1_title">Proyecto 1</p>
-        <p class="proyect_1_subtitle">Pagina web de un cafe en HTML y CSS</p>
-        <img src="./images/Cafe_Espresso.svg" alt="Portada del proyecto" />
-        <p class="proyect_1_description">
-          Mi primer proyecto en HTML y CSS fue esta pagina web de un cafe en la
-          cual podemos reservar una mesa; este proyecto incluye una portada con
-          la informacion del cafe y los links para navegar por la pagina, el
-          formulario para resevar y el pie de pagina con las redes sosciales y
-          el autor.
-        </p>
-      </div>
-      <div class="proyect_2">
-        <p class="proyect_2_title">Proyecto 2</p>
-        <p class="proyect_2_subtitle">Portafolio de proyectos</p>
-        <p class="proyect_2_description">
-          Mi segundo proyecto fue este portafolio para mi CV, se diseño basado
-          en mis preferencias a traves de Figma
-        </p>
-      </div>
+    <div class="skills_tools_title">
+    <p class="skills_tools">Habilidades y Herramientas</p>
+    <div class="skills_tools_logos">
+    <img class="html" src="./images/Group 2.svg">
+    <img class="css" src="./images/Group 3.svg">
+    <img class="java" src="./images/Group 1.svg">
+    <img class="git" src="./images/Group 4.svg">
+    <img class="github" src="./images/Group 5.svg">
+    <img class="chatgpt" src="./images/Group 6.svg">
+    </div>
+    </div>
     </section>
+    </header>
+    <main class="content">
+      <section class="main_content">
+        <h2 class="main_content_title">Proyectos destacados</h2>
+        <div class="proyect1">
+          <img class="proyect1_image" alt="Imagen del proyecto" src="./images/webpage_image.svg">
+          <div class="proyect1_box">
+          <p class="proyect1_title">Página web de una cafetería</p>
+          <p class="proyect1_description">Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional.Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</p>
+          <nav class="nav_proyect1">
+            <ul class="nav_links_proyect1">
+              <li><a class="nav_link_proyect1" href="https://darseckjr1.github.io/web_project_coffeeshop_es/"><img class="nav_link_image_p1" src="./images/livedemo.svg"></a></li>
+              <li><a class="nav_link_proyect1" href="https://github.com/Darseckjr1"><img class="nav_link_image_p1" src="./images/githublogo.svg"></a></li>
+            </ul>
+          </nav>
+          </div>
+          </div>
+          <div class="proyect2">
+            <img class="proyect2_image" src="./images/proyect2_image.svg" alt="imagen del proyecto 2">
+            <div class="proyect2_box">
+              <p class="proyect2_title">Mi proyecto</p>
+              <p class="proyect2_description">Descripción del proyecto</p>
+              <nav class="nav_proyect2">
+            <ul class="nav_links_proyect2">
+              <li><a class="nav_link_proyect2" href=""><img class="nav_link_image_p2" src="./images/livedemo.svg" alt="Imagen del proyecto 2"></a></li>
+              <li><a class="nav_link_proyect2" href="https://github.com/Darseckjr1"><img class="nav_link_image_p2" src="./images/githublogo.svg"></a></li>
+            </ul>
+            </div>
+          </div>
+      </section>
+
+
   </body>
 </html>
