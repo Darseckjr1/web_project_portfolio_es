@@ -189,7 +189,7 @@ html {
   margin-top: 100px;
 }
 
-.proyects {
+.projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -198,19 +198,17 @@ html {
   box-sizing: border-box;
 }
 
-.proyect1 {
-  min-width: 0;
-  width: 100%;
-}
-
-.proyect1_image,
-.proyect2_image {
+.project1_image,
+.project2_image,
+.project3_image {
   max-width: 100%;
   width: 100%;
+  height: auto;
 }
 
 .linear_gradient1,
-.linear_gradient2 {
+.linear_gradient2,
+.linear_gradient3 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -227,41 +225,47 @@ html {
   position: relative;
 }
 
-.proyect1_logo,
-.proyect2_logo {
+.project1_logo,
+.project2_logo,
+.project3_logo {
   width: 40px;
   height: 40px;
   gap: 10px;
 }
 
-.proyect1_logos,
-.proyect2_logos {
+.project1_logos,
+.project2_logos,
+.project3_logos {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 
-.proyect1_box,
-.proyect2_box {
+.project1_box,
+.project2_box,
+.project3_box {
   background: #1c1c1c;
   display: grid;
   grid-template-rows: 66px 195px auto;
   width: 100%;
 }
 
-.proyect1_title,
-.proyect2_title {
+.project1_title,
+.project2_title,
+.project3_title {
   margin: 0;
   margin-top: 30px;
   margin-left: 30px;
+  margin-right: 30px;
   font-family: "open_sans-bold", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1.375;
   color: #ffffff;
 }
 
-.proyect1_description,
-.proyect2_description {
+.project1_description,
+.project2_description,
+.project3_description {
   font-family: "open_sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.39;
@@ -269,10 +273,12 @@ html {
   margin: 0;
   margin-top: 20px;
   margin-left: 30px;
+  margin-right: 30px;
 }
 
-.nav_links_proyect1,
-.nav_links_proyect2 {
+.nav_links_project1,
+.nav_links_project2,
+.nav_links_project3 {
   list-style: none;
   padding: 0;
   display: flex;
@@ -375,8 +381,9 @@ html {
   opacity: 0.5;
 }
 
-.nav_link_proyect1:hover,
-.nav_link_proyect2:hover {
+.nav_link_project1:hover,
+.nav_link_project2:hover,
+.nav_link_project3:hover {
   opacity: 0.5;
 }
 
@@ -454,7 +461,7 @@ html {
     line-height: 1.1;
   }
 
-  .proyects {
+  .projects {
     max-width: 700px;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -463,8 +470,9 @@ html {
     box-sizing: border-box;
   }
 
-  .proyect1_description,
-  .proyect2_description {
+  .project1_description,
+  .project2_description,
+  .project3_description {
     margin-right: 30px;
   }
 
@@ -572,48 +580,54 @@ html {
     line-height: 1.125;
   }
 
-  .proyects {
+  .projects {
     grid-template-columns: 100%;
     gap: 25px;
     margin-top: 45px;
     padding: 0 20px;
   }
 
-  .proyect1_box,
-  .proyect2_box {
+  .project1_box,
+  .project2_box,
+  .project3_box {
     height: auto;
     grid-template-rows: auto auto auto;
     box-sizing: border-box;
   }
 
-  .proyect1_title,
-  .proyect2_title {
+  .project1_title,
+  .project2_title,
+  .project3_title {
     margin: 25px 20px 0;
     font-size: 20px;
     line-height: 1.4;
   }
 
-  .proyect1_description,
-  .proyect2_description {
+  .project1_description,
+  .project2_description,
+  .project3_description {
     margin: 15px 20px 0;
     font-size: 16px;
     line-height: 1.5;
   }
 
-  .proyect1_logo,
-  .proyect2_logo {
+  .project1_logo,
+  .project2_logo,
+  .project3_logo {
     width: 25px;
     height: 25px;
   }
 
-  .proyect1_logos,
-  .proyect2_logos {
+  .project1_logos,
+  .project2_logos,
+  .project3_logos {
     bottom: 5px;
     left: 5px;
   }
 
-  .nav_links_proyect1,
-  .nav_links_proyect2 {
+  .nav_links_project1,
+  .nav_links_project2,
+  .nav_links_project3 {
     flex-wrap: wrap;
     gap: 15px;
     margin: 25px 20px 20px;
